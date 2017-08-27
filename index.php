@@ -9,6 +9,26 @@
   </head>
   <body>
 
+<div class="large-space"></div>
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <div class="row middle-xs">
+            <div class="col-xs-4"><div class="box classic">Logo</div></div>
+            <div class="col-xs-8">
+                <div class="box invisible">Romain <br> Penchenat</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box classic">UX - UI Designer</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <div class="box image"></div>
+    </div>
+</div>
+
 
       <script type="text/javascript" src="script/jQuery/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="script/bez-master/src/jquery.bez.min.js"></script>
