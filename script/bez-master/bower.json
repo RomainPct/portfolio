@@ -1,0 +1,8 @@
+{
+  "name": "jquery-bez",
+  "version": "1.0.11",
+  "author": "Robert Dallas Gray",
+  "description": "Specify jQuery easing functions as cubic-bezier co-ordinates",
+  "main": "lib/jquery.bez.min.js",
+  "ignore": ["src/", "Makefile"]
+}
