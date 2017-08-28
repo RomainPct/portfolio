@@ -1,0 +1,56 @@
+/* Général */
+html, body {
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+/* Grid*/
+.row {
+    margin-bottom: 20px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.col {
+    display: inline-block;
+    margin-left: -5px;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.col.xs-1 {
+    width: 8.3333%;
+}
+.col.xs-2 {
+    width: 16.6666%;
+}
+.col.xs-3 {
+    width: 24.9999%;
+}
+.col.xs-4 {
+    width: 33.3333%;
+}
+.col.xs-5 {
+    width: 41.6666%;
+}
+.col.xs-6 {
+    width: 50%;
+}
+.col.xs-7 {
+    width: 58.3333%;
+}
+.col.xs-8 {
+    width: 66.6666%;
+}
+.col.xs-9 {
+    width: 74.9999%;
+}
+.col.xs-10 {
+    width: 83.3333%;
+}
+.col.xs-11 {
+    width: 91.6665%;
+}
+.col.xs-12 {
+    width: 100%;
+}

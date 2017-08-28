@@ -1,0 +1,41 @@
+h1 {
+  font-size: 3.56rem;
+  font-size: calc( 2vw + 1vh + 1rem);
+  line-height: 110%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.92rem;
+  font-size: calc(1.5vw + 1vh + 1rem); /* 2.92rem */
+  line-height: 110%;
+  margin: calc(.75vw + .5vh + .5rem) 0 calc(.6vw + .4vh + .4rem) 0;
+}
+
+h3 {
+  font-size: 2.28rem;
+  font-size: calc(1.17vw + .78vh + .78rem);/* 2.28rem */
+  line-height: 110%;
+  margin: calc(.58vw + .39vh + .39rem) 0 calc(.468vw + .312vh + .312rem) 0;
+}
+
+h4 {
+  font-size: 1.64rem;
+  font-size: calc(.84vw + .56vh + .56rem); /* 1.64rem */
+  line-height: 110%;
+  margin: calc(.42vw + .28vh + .28rem) 0 calc(.34vw + .22vh + .22rem) 0;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-size: calc(.616vw + .41vh + .41rem);
+  line-height: 110%;
+  margin: calc(.308vw + .205vh + .205rem) 0 calc(.246vw + .164vh + .164rem) 0;
+}
+
+h6 {
+  font-size: 1rem;
+  font-size: calc(.51vw + .34vh + .34rem);/* 1rem */
+  line-height: 110%;
+  margin: calc(.25vw + .17vh + .17rem) 0 calc(.2vw + .136vh + .136rem) 0;
+}
