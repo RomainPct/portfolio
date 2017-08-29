@@ -6,12 +6,21 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
-.row.full-height {
--webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-        align-items: stretch
+
+#bande {
+    position: fixed;
+    height: 100%;
+    right: 5%;
+    z-index: -1;
 }
 
+img.icon {
+    height: calc(.75vw + .375vh + .375rem);
+    width: auto;
+    opacity: .54;
+    margin-right: 5px;
+    vertical-align: baseline;
+}
 
 /* Fonts */
 @font-face {
@@ -44,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Spaces */
 .small-space {
-    height: 20px;
+    height: 1.85vh;
 }
 .medium-space {
-    height: 40px;
+    height: 3.7vh;
 }
 .large-space {
-    height: 100px;
+    height: 9.25vh;
 }
 
 /* Colors */
@@ -66,17 +75,52 @@ h1, h2, h3, h4, h5, h6 {
 .red-error {
     background-color: #ff1744;
 }
+.white-bg {
+    background-color: #fff;
+}
+
+/* Menu */
+menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 9.25vh;
+    line-height: 9.25vh;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 100;
+    margin: 0;
+    padding: 0 5%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
+}
+
+.languages {
+    position: absolute;
+    height: 9.25vh;
+    line-height: 9.25vh;
+    top: 0;
+    left: 5%;
+}
+.languages img {
+    height: 4vh;
+    width: auto;
+    vertical-align: middle;
+}
+.languages img.disable {
+    opacity: .3;
+}
 
 /* Containers */
 .box.classic {
-    padding: 40px 20px;
+    padding: 3.7vh 1vw;
     -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
             box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
     border-radius: 20px;
     height: 100%;
 }
 .box.invisible {
-    padding: 40px 20px;
+    padding: 3.7vh 1vw;
     height: 100%;
 }
 .box.image {
@@ -84,14 +128,106 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
             box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
     overflow: hidden;
+    position: relative;
 }
 .box.image img {
     width: 100%;
     height: auto;
     vertical-align: middle;
 }
-.box.circle-image {
+.box.image.img_full_height img {
+    height: 100%;
+    width: auto;
+}
+.box.image h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.box.image.w_shadow:after {
+    content: "";
+    display: block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.box.image.circle {
     border-radius: 50%;
     -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
             box-shadow: 2px 2px 6px rgba(0,0,0,0.33);
+    height: calc( ((88vw - 20px) * 2/12) - 20px );
+}
+.box.image.circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box.image.social {
+    width: 7vw;
+    height: 7vw;
+    line-height: 7vw;
+    display: inline-block;
+}
+.box.image.social img {
+    width: 70%;
+}
+.box.message-me {
+    padding: 3.7vh 1vw;
+    margin-left: 8.3333%;
+    border-radius: 20px;
+    position: relative;
+}
+.box.message-me:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -1vh;
+    top: 30%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 0;
+    height: 0;
+    border-radius: 20px;
+    border-top: 10vh solid transparent;
+    border-right: 10vh solid transparent;
+    border-bottom: 10vh solid #06aed5;
+}
+
+/* Height */
+.size30vw {
+    height: 30vw;
+}
+
+/* Button */
+.button {
+    -webkit-appearance : none;
+    padding: 1.85vh 5vw;
+    background-color: transparent ;
+    border-radius: 40px;
+    border: 2px solid #40C4FF;
+    color: #40C4FF;
+    font-size: calc(1vw + .5vh + .5rem);
+    font-weight: bold;
+}
+/* Form */
+.rp_input {
+    -webkit-appearance:none;
+    width: 100%;
+    padding: 1.85vh 2vw;
+    background-color: transparent ;
+    border-radius: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.87);
+    font-size: calc(1vw + .5vh + .5rem);
+    font-weight: lighter;
+    outline: none;
+}
+.rp_input:valid {
+    border: 2px solid rgba(0, 0, 0, 0.05);
 }
