@@ -7,7 +7,6 @@ html, body {
 }
 /* Grid*/
 .row {
-    margin-bottom: 20px;
     width: 100%;
     vertical-align: middle;
 }
@@ -17,7 +16,15 @@ html, body {
     margin-left: -5px;
     padding: 0 10px;
     vertical-align: middle;
+    margin-bottom: 20px;
 }
+.col.top {
+    vertical-align: top;
+}
+.col.bottom {
+    vertical-align: bottom;
+}
+
 .col.xs-1 {
     width: 8.3333%;
 }
@@ -53,4 +60,67 @@ html, body {
 }
 .col.xs-12 {
     width: 100%;
+}
+
+.col.offset-xs-1 {
+    margin-left: 8.3333%;
+}
+.col.offset-xs-2 {
+    margin-left: 16.6666%;
+}
+.col.offset-xs-3 {
+    margin-left: 24.9999%;
+}
+.col.offset-xs-4 {
+    margin-left: 33.3333%;
+}
+.col.offset-xs-5 {
+    margin-left: 41.6666%;
+}
+.col.offset-xs-6 {
+    margin-left: 50%;
+}
+.col.offset-xs-7 {
+    margin-left: 58.3333%;
+}
+.col.offset-xs-8 {
+    margin-left: 66.6666%;
+}
+.col.offset-xs-9 {
+    margin-left: 74.9999%;
+}
+.col.offset-xs-10 {
+    margin-left: 83.3333%;
+}
+.col.offset-xs-11 {
+    margin-left: 91.6665%;
+}
+.col.offset-xs-12 {
+    margin-left: 100%;
+}
+
+/* col bonus*/
+.col.no-margin {
+    margin-bottom: 0;
+}
+.col.full-height {
+    height: 100%;
+}
+
+/* Text organisation */
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+/* Bonus */
+.row.line {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    margin-bottom: 20px;
 }
