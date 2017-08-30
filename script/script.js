@@ -24,16 +24,22 @@ $(window).on('scroll',function(){
 });
 
 function appearAnimation(scrollValue){
-    $('.to_anim').each(function(index){
+    $('.to_anim:not(.already_anim)').each(function(index){
         if ( $(this).offset().top < scrollValue + screenHeight ) {
             const div = $(this);
             div.css('transform','translateX(0%)');
             div.css('-webkit-transform','translateX(0%)');
-            setTimeout(function(){
-                div.removeClass('to_anim')
-            },1000);
+            div.addClass('already_anim');
         }
     });
 }
+
+$('menu .item').on('click',function(){
+    const distance = $('#'+ $(this).attr('name') ).offset().top - (screenHeight / 8);
+    const speed = distance - $(window).scrollTop() >= 0 ? distance - $(window).scrollTop() : -(distance - $(window).scrollTop());
+    $('html, body').animate({
+        scrollTop: distance + 'px'
+    },(speed/screenHeight)*600,$.bez([0.4,0,0.2,1]));
+});
 
 })(jQuery);

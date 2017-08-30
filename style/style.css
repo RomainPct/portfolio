@@ -3,9 +3,14 @@
 body {
     margin: 0 auto;
     padding: 0;
-    width: 90%;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+}
+
+#container {
+    width: 90vw;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 #bande {
@@ -25,6 +30,8 @@ img.icon {
     vertical-align: baseline;
 }
 
+
+/* Animation*/
 .to_anim {
     -webkit-transition: -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
     transition: -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
@@ -151,6 +158,12 @@ menu {
 
 #languages img.disable {
     opacity: .3;
+}
+
+menu .items .item {
+    cursor: pointer;
+    display: inline-block;
+    transition: font-weight .3s cubic-bezier(0.4,0,0.2,1);
 }
 
 
