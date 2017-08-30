@@ -15,12 +15,16 @@ $(window).on('load',function(){
 
 $(window).on('scroll',function(){
     const scrollValue = $(this).scrollTop() ;
+    // Cacher/Afficher le choix des langues
     if (scrollValue / screenHeight > 0.0925) {
         $('#languages').css('opacity','0');
     } else {
         $('#languages').css('opacity','1');
     }
+    // Lancer les animations d'apparitions
     appearAnimation(scrollValue);
+    // Mettre à jour le menu
+    actualizeMenu(scrollValue);
 });
 
 function appearAnimation(scrollValue){
@@ -30,6 +34,24 @@ function appearAnimation(scrollValue){
             div.css('transform','translateX(0%)');
             div.css('-webkit-transform','translateX(0%)');
             div.addClass('already_anim');
+        }
+    });
+}
+
+function actualizeMenu(scrollValue){
+    var decal = 4;
+    $($('.section').get().reverse()).each(function(index){
+        decal = decal -1;
+        if ( ($(this).offset().top - scrollValue - (screenHeight / 8)) - 4 <= 0) {
+            if (!$('.item[name='+ $(this).attr('id') +']').hasClass('medium')) {
+                $('.item.medium').removeClass('medium');
+                $('.item[name='+ $(this).attr('id') +']').addClass('medium');
+                $('.items').css({
+                    'transform':'translateX(-'+ decal * 24.9999 +'%)',
+                    '-webkit-transform':'translateX(-'+ decal * 24.9999 +'%)'
+                });
+            }
+            return false;
         }
     });
 }

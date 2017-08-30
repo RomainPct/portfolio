@@ -41,7 +41,7 @@
     </menu>
 
 <div id="container">
-    <div id="home">
+    <div id="home" class="section">
         <div class="large-space"></div>
         <div class="medium-space"></div>
         <div class="row">
@@ -70,7 +70,7 @@
         </div>
         <div class="large-space"></div>
     </div> <!-- Fin Home -->
-    <div id="bio">
+    <div id="bio" class="section">
         <div class="row to_anim fr_left">
             <div class="col xs-11">
                 <h4>I am a 17 years old french designer. I'm interested by UX design a lot but I also know and improve my skills into UI design, motion design and webdevelopment. Since I’m thirteen years old, I learn many things about the digital.</h4>
@@ -108,7 +108,7 @@
         </div>
         <div class="large-space"></div>
     </div> <!-- Fin Bio -->
-    <div id="works">
+    <div id="works" class="section">
         <div class="row">
             <div class="col xs-8 to_anim fr_left">
                 <div class="box image size30vw w_shadow hoverable">
@@ -137,7 +137,7 @@
         </div>
         <div class="large-space"></div>
     </div> <!-- Fin Works -->
-    <div id="contact">
+    <div id="contact" class="section">
         <div class="row to_anim fr_left">
             <div class="col xs-12">
                 <div class="box classic white-bg">
