@@ -45,7 +45,7 @@
         <div class="large-space"></div>
         <div class="medium-space"></div>
         <div class="row">
-            <div class="col xs-6 to_anim fr_left">
+            <div class="col xs-6 po-12 to_anim fr_left">
                 <div class="row">
                     <div class="col xs-4">
                         <div class="box image">
@@ -57,14 +57,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col xs-12">
-                        <div class="box classic text-center">
+                    <div class="col xs-12 po-no-margin">
+                        <div class="box classic text-center white-bg">
                             <h1>UX - UI Design</h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col xs-6 to_anim fr_right">
+            <div class="col xs-6 po-12 to_anim fr_right">
                 <div class="box image"><img src="ressources/general/profil.jpg" alt=""></div>
             </div>
         </div>
@@ -77,31 +77,31 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2">
+            <div class="col xs-2 po-4">
                 <div class="box classic text-center">
                     <h3>2013</h3></div>
             </div>
-            <div class="col xs-9">
+            <div class="col xs-9 po-11">
                 <div class="box invisible">
                     <h4>First I learned web development with html, css and php languages. Then I made some little web projects with my friends or for my uncle. That was very constructive for me.</h4></div>
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2">
+            <div class="col xs-2 po-4">
                 <div class="box classic text-center">
                     <h3>2016</h3></div>
             </div>
-            <div class="col xs-9">
+            <div class="col xs-9 po-11">
                 <div class="box invisible">
                     <h4>Mid 2016, I was interisting by webdesign. I have discover UI principles, UX thinking and so much more. My abilities in development help me to create coherent interfaces.</h4></div>
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2">
+            <div class="col xs-2 po-4">
                 <div class="box classic text-center">
                     <h3>2017</h3></div>
             </div>
-            <div class="col xs-9">
+            <div class="col xs-9 po-11">
                 <div class="box invisible">
                     <h4>Finally, I decide to discover app development world during summer 2017. My final goal is to know a little each part of digital creation to choose my speciality next.</h4></div>
             </div>
@@ -110,25 +110,25 @@
     </div> <!-- Fin Bio -->
     <div id="works" class="section">
         <div class="row">
-            <div class="col xs-8 to_anim fr_left">
+            <div class="col xs-8 po-12 to_anim fr_left">
                 <div class="box image size30vw w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Les villas de cassis</h2>
                     <img src="ressources/projets/villa_cassis-large.jpg" alt="Les villas de cassis">
                 </div>
             </div>
-            <div class="col xs-4 to_anim fr_right">
+            <div class="col xs-4 po-12 to_anim fr_right">
                 <div class="box image size30vw img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Passion Spa Brive</h2>
                     <img src="ressources/projets/passionspabrive.jpg" alt="Passion Spa Brive">
                 </div>
             </div>
-            <div class="col xs-4 to_anim fr_left">
+            <div class="col xs-4 po-12 to_anim fr_left">
                 <div class="box image size30vw  img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">#DailyUI Challenge</h2>
                     <img src="ressources/projets/dailyui.jpg" alt="DailyUI Challenge">
                 </div>
             </div>
-            <div class="col xs-8 to_anim fr_right">
+            <div class="col xs-8 po-12 to_anim fr_right">
                 <div class="box image size30vw w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Le Drive Malemort</h2>
                     <img src="ressources/projets/drive_malemort.jpg" alt="Le drive malemort">
@@ -180,27 +180,27 @@
         </div>
         <div class="medium-space"></div>
         <div class="row to_anim fr_right">
-            <div class="col xs-2 offset-xs-1 text-center">
+            <div class="col xs-2  po-3 offset-xs-1 offset-po-0 text-center">
                 <a href="https://www.behance.net/tellusoffi5fd1" target="_blank">
                     <div class="box image social"><img src="ressources/icones/behance.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 text-center">
+            <div class="col xs-2 po-3 text-center">
                 <a href="https://dribbble.com/RomainPenchenat" target="_blank">
                     <div class="box image social"><img src="ressources/icones/dribbble.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 text-center">
+            <div class="col xs-2 po-3 text-center">
                 <a href="https://twitter.com/romainp_design" target="_blank">
                     <div class="box image social"><img src="ressources/icones/twitter.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 text-center">
+            <div class="col xs-2 po-3 text-center">
                 <a href="https://www.instagram.com/romainpdesign/" target="_blank">
                     <div class="box image social"><img src="ressources/icones/instagram.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 text-center">
+            <div class="col xs-2 po-10 offset-po-1 text-center">
                 <a href="https://www.messenger.com/t/romainpdesign" target="_blank">
                     <div class="box image social"><img src="ressources/icones/messenger.svg" alt=""></div>
                 </a>
