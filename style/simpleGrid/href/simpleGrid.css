@@ -126,6 +126,9 @@ html, body {
 }
 
 @media (orientation:portrait) {
+    .col.po-0 {
+        display: none;
+    }
     .col.po-1 {
         width: 8.3333%;
     }
@@ -205,5 +208,11 @@ html, body {
 
     .col.po-no-margin {
         margin-bottom: 0;
+    }
+}
+
+@media (orientation:landscape) {
+    .col.xs-0 {
+        display: block;
     }
 }

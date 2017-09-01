@@ -140,13 +140,13 @@
         <div class="row to_anim fr_left">
             <div class="col xs-12">
                 <div class="box classic white-bg">
-                    <div class="row">
-                        <div class="col xs-2">
+                    <div class="row po-first-msg">
+                        <div class="col xs-2 po-4">
                             <div class="box image circle img_full_height">
                                 <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
                             </div>
                         </div>
-                        <div class="col xs-10">
+                        <div class="col xs-10 po-8 po-no-margin">
                             <div class="box message-me blue-bg">
                                 <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
                             </div>
@@ -154,11 +154,14 @@
                     </div>
                     <div class="row line"></div>
                     <div class="row">
-                        <div class="col xs-9 no-margin">
+                        <div class="col xs-9 po-10 no-margin">
                             <input type="text" class="rp_input" name="dir_message_textarea" placeholder="Votre message">
                         </div>
-                        <div class="col xs-3 text-center no-margin">
+                        <div class="col xs-3 po-0 text-center no-margin">
                             <button class="button" type="button" name="first_step">Envoyer</button>
+                        </div>
+                        <div class="col xs-0 po-2 no-margin">
+                            <button class="icon-button" type="button" name="first_step"><img src="ressources/icones/send.svg" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -181,27 +184,27 @@
         <div class="row to_anim fr_right">
             <div class="col xs-2  po-3 offset-xs-1 offset-po-0 text-center">
                 <a href="https://www.behance.net/tellusoffi5fd1" target="_blank">
-                    <div class="box image social"><img src="ressources/icones/behance.svg" alt=""></div>
+                    <div class="box image social white-bg"><img src="ressources/icones/behance.svg" alt=""></div>
                 </a>
             </div>
             <div class="col xs-2 po-3 text-center">
                 <a href="https://dribbble.com/RomainPenchenat" target="_blank">
-                    <div class="box image social"><img src="ressources/icones/dribbble.svg" alt=""></div>
+                    <div class="box image social white-bg"><img src="ressources/icones/dribbble.svg" alt=""></div>
                 </a>
             </div>
             <div class="col xs-2 po-3 text-center">
                 <a href="https://twitter.com/romainp_design" target="_blank">
-                    <div class="box image social"><img src="ressources/icones/twitter.svg" alt=""></div>
+                    <div class="box image social white-bg"><img src="ressources/icones/twitter.svg" alt=""></div>
                 </a>
             </div>
             <div class="col xs-2 po-3 text-center">
                 <a href="https://www.instagram.com/romainpdesign/" target="_blank">
-                    <div class="box image social"><img src="ressources/icones/instagram.svg" alt=""></div>
+                    <div class="box image social white-bg"><img src="ressources/icones/instagram.svg" alt=""></div>
                 </a>
             </div>
             <div class="col xs-2 po-10 offset-po-1 text-center">
                 <a href="https://www.messenger.com/t/romainpdesign" target="_blank">
-                    <div class="box image social"><img src="ressources/icones/messenger.svg" alt=""></div>
+                    <div class="box image social white-bg"><img src="ressources/icones/messenger.svg" alt=""></div>
                 </a>
             </div>
         </div>

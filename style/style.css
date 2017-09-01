@@ -18,8 +18,8 @@ body {
     height: 0%;
     right: 5%;
     z-index: -1;
-    -webkit-transition: height 1s cubic-bezier(0.4,0,0.2,1);
-    transition: height 1s cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 img.icon {
@@ -32,20 +32,24 @@ img.icon {
 
 
 /* Animation*/
+
 .to_anim {
-    -webkit-transition: -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
-    transition: -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
-    transition: transform 1s cubic-bezier(0.4,0,0.2,1);
-    transition: transform 1s cubic-bezier(0.4,0,0.2,1), -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .fr_left {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+
 .fr_right {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
+
 
 /* Fonts */
 
@@ -161,11 +165,12 @@ menu {
 }
 
 menu .items {
-    -webkit-transition: -webkit-transform .3s cubic-bezier(0.4,0,0.2,1);
-    transition: -webkit-transform .3s cubic-bezier(0.4,0,0.2,1);
-    transition: transform .3s cubic-bezier(0.4,0,0.2,1);
-    transition: transform .3s cubic-bezier(0.4,0,0.2,1), -webkit-transform .3s cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform .3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 menu .items .item {
     cursor: pointer;
     display: inline-block;
@@ -232,11 +237,12 @@ menu .items .item {
 
 .box.image.hoverable {
     cursor: pointer;
-    -webkit-transition: -webkit-box-shadow .3s cubic-bezier(0.4,0,0.2,1);
-    transition: -webkit-box-shadow .3s cubic-bezier(0.4,0,0.2,1);
-    transition: box-shadow .3s cubic-bezier(0.4,0,0.2,1);
-    transition: box-shadow .3s cubic-bezier(0.4,0,0.2,1), -webkit-box-shadow .3s cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition: -webkit-box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .box.image.hoverable:hover {
     -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.66);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.66);
@@ -300,16 +306,28 @@ menu .items .item {
 
 
 /* Button */
-
-.button {
+button {
     -webkit-appearance: none;
-    padding: 1.85vh 5vw;
     background-color: transparent;
-    border-radius: 40px;
     border: 2px solid #40C4FF;
+    margin: 0;
+}
+.button {
+    padding: 1.85vh 5vw;
+    border-radius: 40px;
     color: #40C4FF;
     font-size: calc(1vw + .5vh + .5rem);
     font-weight: bold;
+}
+
+.icon-button {
+    border-radius: 50%;
+    width: 100%;
+    height: calc(((88vw - 20px)*2/12) - 20px);
+    padding: 0;
+}
+.icon-button img {
+    width: 80%;
 }
 
 
@@ -334,6 +352,7 @@ menu .items .item {
 
 
 /* Orientation portrait */
+
 @media (orientation:portrait) {
     /* Menu */
     menu {
@@ -350,23 +369,45 @@ menu .items .item {
     .po-size-50vw {
         height: 50vw;
     }
-
-    .box.classic, .box.invisible {
+    .box.classic, .box.invisible, .box.message-me {
         padding: 2vh 1vw;
     }
-
+    .po-first-msg {
+        background-color: #06aed5;
+        border-radius: 10px;
+        margin-bottom: 2vh;
+    }
+    .box.message-me {
+        margin-left: 0;
+    }
+    .box.message-me:before {
+        display: none;
+    }
+    .box.image.circle {
+        height: calc(((88vw - 20px)*4/12) - 20px)
+    }
     /* Spaces */
-
     .small-space {
         height: 1vh;
     }
-
     .medium-space {
         height: 2vh;
     }
-
     .large-space {
         height: 5vh;
     }
-
+    /* Box */
+    .box.classic {
+        border-radius: 10px;
+    }
+    .box.image.social {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        border-radius: 10px;
+    }
+    /* Button */
+    .button {
+        padding: 1vh 2.5vw;
+    }
 }
