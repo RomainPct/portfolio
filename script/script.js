@@ -1,10 +1,16 @@
 (function(){
 
 var screenHeight = $('html').height()
+var orientation = "landscape";
 
 $(window).on('resize',function(){
     screenHeight = $('html').height();
 });
+$( window ).on( "orientationchange", function( event ) {
+    orientation = event.orientation;
+});
+// Trigger orientation change pour mettre à jour la variable au chargement
+$(window).orientationchange();
 
 $(window).on('load',function(){
     $('#bande').css('height','100%');
@@ -46,15 +52,25 @@ function actualizeMenu(scrollValue){
             if (!$('.item[name='+ $(this).attr('id') +']').hasClass('medium')) {
                 $('.item.medium').removeClass('medium');
                 $('.item[name='+ $(this).attr('id') +']').addClass('medium');
-                $('.items').css({
-                    'transform':'translateX(-'+ decal * 24.9999 +'%)',
-                    '-webkit-transform':'translateX(-'+ decal * 24.9999 +'%)'
-                });
+                move_items(decal);
             }
             return false;
         }
     });
 }
+    function move_items(decal){
+        if (orientation == 'landscape') {
+            $('.items').css({
+                'transform':'translateX(-'+ decal * 24.9999 +'%)',
+                '-webkit-transform':'translateX(-'+ decal * 24.9999 +'%)'
+            });
+        } else {
+            $('.items').css({
+                'transform':'translateX(-'+  0 +'%)',
+                '-webkit-transform':'translateX(-'+  0 +'%)'
+            });
+        }
+    }
 
 $('menu .item').on('click',function(){
     const distance = $('#'+ $(this).attr('name') ).offset().top - (screenHeight / 8);

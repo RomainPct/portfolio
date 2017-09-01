@@ -9,7 +9,7 @@ body {
 
 #container {
     width: 90vw;
-    margin: 0 auto;
+    margin: 9.25vh auto 0 auto;
     overflow-x: hidden;
 }
 
@@ -330,4 +330,43 @@ menu .items .item {
 
 .rp_input:valid {
     border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* Orientation portrait */
+@media (orientation:portrait) {
+    /* Menu */
+    menu {
+        padding: 0;
+    }
+    #languages img:not(.disable) {
+        display: none;
+    }
+    #languages img {
+        height: auto;
+        width: 100%;
+    }
+    /*Size*/
+    .po-size-50vw {
+        height: 50vw;
+    }
+
+    .box.classic, .box.invisible {
+        padding: 2vh 1vw;
+    }
+
+    /* Spaces */
+
+    .small-space {
+        height: 1vh;
+    }
+
+    .medium-space {
+        height: 2vh;
+    }
+
+    .large-space {
+        height: 5vh;
+    }
+
 }

@@ -21,7 +21,7 @@
                 <a href="en"><img src="ressources/icones/english.svg" alt="english"></a>
                 <a href="fr"><img class="disable"  src="ressources/icones/francais.svg" alt="francais"></a>
             </div>
-            <div class="col xs-7 offset-xs-5">
+            <div class="col xs-7 po-10  offset-xs-5 offset-po-2 ">
                 <div class="row box items text-center">
                     <div class="col xs-3 no-margin">
                         <h4 class="medium item" name="home" >Home</h4>
@@ -42,7 +42,6 @@
 
 <div id="container">
     <div id="home" class="section">
-        <div class="large-space"></div>
         <div class="medium-space"></div>
         <div class="row">
             <div class="col xs-6 po-12 to_anim fr_left">
@@ -77,8 +76,8 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2 po-4">
-                <div class="box classic text-center">
+            <div class="col xs-2 po-4 po-no-margin">
+                <div class="box classic text-center po-small-padding">
                     <h3>2013</h3></div>
             </div>
             <div class="col xs-9 po-11">
@@ -87,8 +86,8 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2 po-4">
-                <div class="box classic text-center">
+            <div class="col xs-2 po-4 po-no-margin">
+                <div class="box classic text-center po-small-padding">
                     <h3>2016</h3></div>
             </div>
             <div class="col xs-9 po-11">
@@ -97,8 +96,8 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2 po-4">
-                <div class="box classic text-center">
+            <div class="col xs-2 po-4 po-no-margin">
+                <div class="box classic text-center po-small-padding">
                     <h3>2017</h3></div>
             </div>
             <div class="col xs-9 po-11">
@@ -111,25 +110,25 @@
     <div id="works" class="section">
         <div class="row">
             <div class="col xs-8 po-12 to_anim fr_left">
-                <div class="box image size30vw w_shadow hoverable">
+                <div class="box image size30vw po-size-50vw w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Les villas de cassis</h2>
                     <img src="ressources/projets/villa_cassis-large.jpg" alt="Les villas de cassis">
                 </div>
             </div>
             <div class="col xs-4 po-12 to_anim fr_right">
-                <div class="box image size30vw img_full_height w_shadow hoverable">
+                <div class="box image size30vw po-size-50vw img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Passion Spa Brive</h2>
                     <img src="ressources/projets/passionspabrive.jpg" alt="Passion Spa Brive">
                 </div>
             </div>
             <div class="col xs-4 po-12 to_anim fr_left">
-                <div class="box image size30vw  img_full_height w_shadow hoverable">
+                <div class="box image size30vw po-size-50vw  img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">#DailyUI Challenge</h2>
                     <img src="ressources/projets/dailyui.jpg" alt="DailyUI Challenge">
                 </div>
             </div>
             <div class="col xs-8 po-12 to_anim fr_right">
-                <div class="box image size30vw w_shadow hoverable">
+                <div class="box image size30vw po-size-50vw w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Le Drive Malemort</h2>
                     <img src="ressources/projets/drive_malemort.jpg" alt="Le drive malemort">
                 </div>
@@ -211,6 +210,7 @@
 </div> <!-- Fin container -->
 
     <script type="text/javascript" src="script/jQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script/jquery.mobile.orientation/jquery.mobile.custom.min.js"></script>
     <script type="text/javascript" src="script/bez-master/src/jquery.bez.min.js"></script>
     <script type="text/javascript" src="script/script.min.js"></script>
 </body>
