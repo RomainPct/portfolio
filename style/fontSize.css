@@ -41,9 +41,9 @@ h5 { /* Highlight text */
 
 h6 {
   font-size: 1.2rem;
-  font-size: calc(.616vw + .41vh + .41rem);
+  font-size: calc(.66vw + .33vh + .33rem);
   line-height: 110%;
-  margin: calc(.308vw + .205vh + .205rem) 0 calc(.246vw + .164vh + .164rem) 0;
+  margin: 0;
 }
 
 
