@@ -47,12 +47,12 @@
         <div class="row">
             <div class="col xs-6 po-12 to_anim fr_left">
                 <div class="row">
-                    <div class="col xs-4 po-0">
+                    <div class="col xs-0 md-4 po-0 md-block">
                         <div class="box image">
                             <img src="ressources/general/logo.png" alt="logo">
                         </div>
                     </div>
-                    <div class="col xs-8 po-10 offset-po-1">
+                    <div class="col xs-12 md-8 po-10 offset-po-1">
                         <h1 class="headache">Romain <br>Penchenat</h1>
                     </div>
                 </div>
