@@ -25,6 +25,9 @@ html, body {
     vertical-align: bottom;
 }
 
+.col.xs-0 {
+    display: none;
+}
 .col.xs-1 {
     width: 8.3333%;
 }
@@ -217,7 +220,7 @@ html, body {
     }
 }
 
-@media (orientation:landscape) {
+@media (orientation:portrait) {
     .col.xs-0 {
         display: block;
     }

@@ -322,6 +322,7 @@ button {
     color: #40C4FF;
     font-size: calc(1vw + .5vh + .5rem);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .icon-button {
