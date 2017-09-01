@@ -30,6 +30,9 @@ img.icon {
     vertical-align: baseline;
 }
 
+a:any-link {
+    color: #40C4FF;
+}
 
 /* Animation*/
 
@@ -55,7 +58,7 @@ img.icon {
 
 @font-face {
     font-family: 'headache';
-    src: url('headache-font-otf-webfont.woff2') format('woff2'), url('headache-font-otf-webfont.woff') format('woff');
+    src: url('headache/headache-font-otf-webfont.woff2') format('woff2'), url('headache/headache-font-otf-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -200,6 +203,7 @@ menu .items .item {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.33);
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
 .box.image img {
@@ -318,6 +322,18 @@ button {
     color: #40C4FF;
     font-size: calc(1vw + .5vh + .5rem);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.icon-button {
+    border-radius: 50%;
+    width: 100%;
+    height: calc((88vw - 20px)*2/12);
+    padding: 0;
+}
+.icon-button img {
+    width: 70%;
+    vertical-align: middle;
 }
 
 .icon-button {
@@ -355,9 +371,6 @@ button {
 
 @media (orientation:portrait) {
     /* Menu */
-    menu {
-        padding: 0;
-    }
     #languages img:not(.disable) {
         display: none;
     }

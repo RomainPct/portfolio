@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <title> Romain Penchenat - UI/UX Designer</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
@@ -46,24 +47,24 @@
         <div class="row">
             <div class="col xs-6 po-12 to_anim fr_left">
                 <div class="row">
-                    <div class="col xs-4">
+                    <div class="col xs-4 po-0">
                         <div class="box image">
                             <img src="ressources/general/logo.png" alt="logo">
                         </div>
                     </div>
-                    <div class="col xs-8">
+                    <div class="col xs-8 po-10 offset-po-1">
                         <h1 class="headache">Romain <br>Penchenat</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col xs-12 po-no-margin">
+                    <div class="col xs-12 po-no-bottom-margin po-no-left-margin">
                         <div class="box classic text-center white-bg">
                             <h1>UX - UI Design</h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col xs-6 po-12 to_anim fr_right">
+            <div class="col xs-6 po-12 to_anim fr_right po-no-bottom-margin">
                 <div class="box image"><img src="ressources/general/profil.jpg" alt=""></div>
             </div>
         </div>
@@ -76,7 +77,7 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2 po-4 po-no-margin">
+            <div class="col xs-2 po-4 po-no-bottom-margin">
                 <div class="box classic text-center po-small-padding">
                     <h3>2013</h3></div>
             </div>
@@ -86,7 +87,7 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2 po-4 po-no-margin">
+            <div class="col xs-2 po-4 po-no-bottom-margin">
                 <div class="box classic text-center po-small-padding">
                     <h3>2016</h3></div>
             </div>
@@ -96,7 +97,7 @@
             </div>
         </div>
         <div class="row to_anim fr_left">
-            <div class="col xs-2 po-4 po-no-margin">
+            <div class="col xs-2 po-4 po-no-bottom-margin">
                 <div class="box classic text-center po-small-padding">
                     <h3>2017</h3></div>
             </div>
@@ -141,12 +142,12 @@
             <div class="col xs-12">
                 <div class="box classic white-bg">
                     <div class="row po-first-msg">
-                        <div class="col xs-2 po-4">
+                        <div class="col xs-2 po-0">
                             <div class="box image circle img_full_height">
                                 <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
                             </div>
                         </div>
-                        <div class="col xs-10 po-8 po-no-margin">
+                        <div class="col xs-10 po-12 po-no-bottom-margin">
                             <div class="box message-me blue-bg">
                                 <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
                             </div>
@@ -160,7 +161,7 @@
                         <div class="col xs-3 po-0 text-center no-margin">
                             <button class="button" type="button" name="first_step">Envoyer</button>
                         </div>
-                        <div class="col xs-0 po-2 no-margin">
+                        <div class="col xs-0 po-2 no-margin no-padding">
                             <button class="icon-button" type="button" name="first_step"><img src="ressources/icones/send.svg" alt=""></button>
                         </div>
                     </div>
