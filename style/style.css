@@ -30,6 +30,14 @@ img.icon {
     vertical-align: baseline;
 }
 
+a:-webkit-any-link {
+    color: #40C4FF;
+}
+
+a:-moz-any-link {
+    color: #40C4FF;
+}
+
 a:any-link {
     color: #40C4FF;
 }
@@ -366,6 +374,29 @@ button {
     border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Fixed contact form */
+#fixed_contact_form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    padding: 0 5vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 100;
+    display: none;
+    -webkit-transition: background-color .5s cubic-bezier(0.4,0,0.2,1);
+    transition: background-color .5s cubic-bezier(0.4,0,0.2,1);
+}
+#fixed_form {
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
 
 /* Orientation portrait */
 

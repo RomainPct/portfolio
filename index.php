@@ -138,7 +138,7 @@
         <div class="large-space"></div>
     </div> <!-- Fin Works -->
     <div id="contact" class="section">
-        <div class="row to_anim fr_left">
+        <div id="contact_form" class="row to_anim fr_left">
             <div class="col xs-12">
                 <div class="box classic white-bg">
                     <div class="row po-first-msg">
@@ -156,13 +156,13 @@
                     <div class="row line"></div>
                     <div class="row">
                         <div class="col xs-9 po-10 no-margin">
-                            <input type="text" class="rp_input" name="dir_message_textarea" placeholder="Votre message">
+                            <input type="text" class="rp_input dir_message_textarea" placeholder="Votre message">
                         </div>
                         <div class="col xs-3 po-0 text-center no-margin">
-                            <button class="button" type="button" name="first_step">Envoyer</button>
+                            <button class="button dir_message_textarea" type="button">Envoyer</button>
                         </div>
                         <div class="col xs-0 po-2 no-margin no-padding">
-                            <button class="icon-button" type="button" name="first_step"><img src="ressources/icones/send.svg" alt=""></button>
+                            <button class="icon-button dir_message_textarea" type="button"><img src="ressources/icones/send.svg" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -213,10 +213,44 @@
     </div> <!-- Fin Contact -->
 </div> <!-- Fin container -->
 
+
+<!--  Ultime contact form en position fixed -->
+<div id="fixed_contact_form" class="row">
+    <div id="fixed_form" class="col xs-12 no-margin">
+        <div class="box classic white-bg">
+            <div class="row po-first-msg">
+                <div class="col xs-2 po-0">
+                    <div class="box image circle img_full_height">
+                        <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+                    </div>
+                </div>
+                <div class="col xs-10 po-12 po-no-bottom-margin">
+                    <div class="box message-me blue-bg">
+                        <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row line"></div>
+            <div class="row">
+                <div class="col xs-9 po-10 no-margin">
+                    <input id="message_input" type="text" class="rp_input" placeholder="Votre message">
+                </div>
+                <div class="col xs-3 po-0 text-center no-margin">
+                    <button class="button" type="button">Envoyer</button>
+                </div>
+                <div class="col xs-0 po-2 no-margin no-padding">
+                    <button class="icon-button" type="button"><img src="ressources/icones/send.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <script type="text/javascript" src="script/jQuery/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="script/jquery.mobile.orientation/jquery.mobile.custom.min.js"></script>
     <script type="text/javascript" src="script/bez-master/src/jquery.bez.min.js"></script>
     <script type="text/javascript" src="script/script.min.js"></script>
+    <script type="text/javascript" src="script/contact.min.js"></script>
 </body>
 
 </html>
