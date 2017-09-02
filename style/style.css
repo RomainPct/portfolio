@@ -42,6 +42,7 @@ a:any-link {
     color: #40C4FF;
 }
 
+
 /* Animation*/
 
 .to_anim {
@@ -286,13 +287,23 @@ menu .items .item {
     width: 70%;
 }
 
-.box.message-me {
+
+.frame {
+    overflow: hidden;
+}
+.box.message {
     padding: 3.7vh 1vw;
-    margin-left: 8.3333%;
     border-radius: 20px;
     position: relative;
+    -webkit-transition: opacity .5s cubic-bezier(.2, 0, .4, 1), -webkit-transform .5s cubic-bezier(.2, 0, .4, 1);
+    transition: opacity .5s cubic-bezier(.2, 0, .4, 1), -webkit-transform .5s cubic-bezier(.2, 0, .4, 1);
+    transition: transform .5s cubic-bezier(.2, 0, .4, 1), opacity .5s cubic-bezier(.2, 0, .4, 1);
+    transition: transform .5s cubic-bezier(.2, 0, .4, 1), opacity .5s cubic-bezier(.2, 0, .4, 1), -webkit-transform .5s cubic-bezier(.2, 0, .4, 1);
 }
 
+.box.message-me {
+    margin-left: 8.3333%;
+}
 .box.message-me:before {
     content: "";
     display: block;
@@ -309,6 +320,20 @@ menu .items .item {
     border-bottom: 10vh solid #06aed5;
 }
 
+.box.message-user {
+    margin-right: 8.3333%;
+    display: inline-block;
+}
+.box.message-user h4 {
+    display: inline-block;
+}
+
+.new-message {
+    opacity: 0;
+    -webkit-transform: translateY(80vh);
+    transform: translateY(80vh);
+}
+
 
 /* Height */
 
@@ -318,12 +343,14 @@ menu .items .item {
 
 
 /* Button */
+
 button {
     -webkit-appearance: none;
     background-color: transparent;
     border: 2px solid #40C4FF;
     margin: 0;
 }
+
 .button {
     padding: 1.85vh 5vw;
     border-radius: 40px;
@@ -339,6 +366,7 @@ button {
     height: calc((88vw - 20px)*2/12);
     padding: 0;
 }
+
 .icon-button img {
     width: 70%;
     vertical-align: middle;
@@ -350,6 +378,7 @@ button {
     height: calc(((88vw - 20px)*2/12) - 20px);
     padding: 0;
 }
+
 .icon-button img {
     width: 80%;
 }
@@ -370,33 +399,58 @@ button {
     outline: none;
 }
 
+textarea.rp_input {
+    resize: none;
+    height: 100%;
+    height: calc(100% - 22px);
+}
+
 .rp_input:valid {
     border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+
 /* Fixed contact form */
+
 #fixed_contact_form {
     position: fixed;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-    padding: 0 5vw;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 5vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
     z-index: 100;
     display: none;
-    -webkit-transition: background-color .5s cubic-bezier(0.4,0,0.2,1);
-    transition: background-color .5s cubic-bezier(0.4,0,0.2,1);
+    overflow: hidden;
+    -webkit-transition: background-color .5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 #fixed_form {
-    position: absolute ;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 90vw;
-    -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+#messages {
+    height: 70%;
+    overflow-y: auto;
+}
+
+#answer1 {
+    height: 30%;
+}
+#answer2 {
+    display: none;
+}
+
 
 /* Orientation portrait */
 

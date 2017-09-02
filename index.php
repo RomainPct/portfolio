@@ -148,7 +148,7 @@
                             </div>
                         </div>
                         <div class="col xs-10 po-12 po-no-bottom-margin">
-                            <div class="box message-me blue-bg">
+                            <div class="box message message-me blue-bg">
                                 <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
                             </div>
                         </div>
@@ -217,31 +217,52 @@
 <!--  Ultime contact form en position fixed -->
 <div id="fixed_contact_form" class="row">
     <div id="fixed_form" class="col xs-12 no-margin">
-        <div class="box classic white-bg">
-            <div class="row po-first-msg">
-                <div class="col xs-2 po-0">
-                    <div class="box image circle img_full_height">
-                        <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+        <div class="box classic frame white-bg">
+            <div id="messages">
+                <div class="row po-first-msg">
+                    <div class="col xs-2 po-0">
+                        <div class="box image circle img_full_height">
+                            <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+                        </div>
+                    </div>
+                    <div class="col xs-10 po-12 po-no-bottom-margin">
+                        <div class="box message message-me blue-bg">
+                            <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col xs-10 po-12 po-no-bottom-margin">
-                    <div class="box message-me blue-bg">
-                        <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
+            </div> <!-- fin #messages -->
+            <div id="answer1">
+                <div class="row line"></div>
+                <div class="row full-height">
+                    <div class="col xs-9 po-10 no-margin full-height">
+                        <textarea id="message_input" class="rp_input" placeholder="Votre message"></textarea>
+                    </div>
+                    <div class="col xs-3 po-0 text-center no-margin">
+                        <button class="button send_message" type="button">Envoyer</button>
+                    </div>
+                    <div class="col xs-0 po-2 no-margin no-padding">
+                        <button class="icon-button send_message" type="button"><img src="ressources/icones/send.svg" alt=""></button>
                     </div>
                 </div>
-            </div>
-            <div class="row line"></div>
-            <div class="row">
-                <div class="col xs-9 po-10 no-margin">
-                    <input id="message_input" type="text" class="rp_input" placeholder="Votre message">
+            </div> <!-- Fin #answer1 -->
+            <div id="answer2">
+                <div class="row line"></div>
+                <div class="row full-height">
+                    <div class="col xs-4 no-margin">
+                        <input id="name_input" type="text" class="rp_input" placeholder="Votre nom">
+                    </div>
+                    <div class="col xs-5 po-6 no-margin">
+                        <input id="mail_input" type="email" class="rp_input" placeholder="Votre adresse mail">
+                    </div>
+                    <div class="col xs-3 po-0 text-center no-margin">
+                        <button class="button send_message" type="button">Envoyer</button>
+                    </div>
+                    <div class="col xs-0 po-2 no-margin no-padding">
+                        <button class="icon-button send_message" type="button"><img src="ressources/icones/send.svg" alt=""></button>
+                    </div>
                 </div>
-                <div class="col xs-3 po-0 text-center no-margin">
-                    <button class="button" type="button">Envoyer</button>
-                </div>
-                <div class="col xs-0 po-2 no-margin no-padding">
-                    <button class="icon-button" type="button"><img src="ressources/icones/send.svg" alt=""></button>
-                </div>
-            </div>
+            </div> <!-- Fin #answer2 -->
         </div>
     </div>
 </div>

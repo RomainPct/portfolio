@@ -1,6 +1,7 @@
 (function(){
 
-const fixed_contact_form = $("#fixed_contact_form");
+const fixed_contact_form = $("#fixed_contact_form"),
+            fixed_form = $('#fixed_form');
 var form_opened = false;
 
 $(".dir_message_textarea").on('click',function(){
@@ -16,10 +17,83 @@ $(".dir_message_textarea").on('click',function(){
                 });
                 $('#message_input').focus();
                 form_opened = true;
+                fixed_form.animate({
+                    'height':'100%'
+                },500,$.bez([0.4,0,0.2,1]))
         });
     }
 });
 
+$('.send_message').on('click',function(){
+    if ( $('#message_input').val() != "" ) {
+        // OK Empecher de quitter via le scroll
+        form_opened = false;
+        $('html,body').css('overflow-y','hidden');
+        // OK Cacher partie answer
+        $('#messages').animate({
+            'height':'100%'
+        },300,$.bez([.2,0,.4,1]),function() {
+            $('#answer1').css('display','none');
+        })
+        //  OK Faire apparitre message de l'utilisateur
+        displayMessage2();
+        // OK Faire apparaitre réponse auto
+        displayMessage3();
+        // Faire apparaitre champ input nom et mail
+        displayAnswer2();
+    } else {
+        // Retourner erreur champ vide
+        alert("Vous n'avez pas saisi de message fdp")
+    }
+});
+
+// Gérer le contenu message trop grand et ajuster le scroll
+function adjustMessageScroll(count,time) {
+    var totalHeight = 0;
+    var rowNumber = 0;
+    $('#messages .row').each(function(index){
+        if (rowNumber < count) {
+            totalHeight += $(this).outerHeight()
+            rowNumber++;
+        }
+    });
+    if (totalHeight > $('#fixed_form .frame').height() ) {
+        setTimeout(function(){
+            $('#messages').animate({
+                scrollTop : $("#messages").prop("scrollHeight")
+            },200)
+        },time)
+    }
+}
+function displayMessage2(){
+    $('#messages').append('<div class="row"><div class="col xs-10 offset-xs-2 text-right po-no-bottom-margin"><div id="message2" class="box message message-user new-message yellow-accent"><h4 class="text-left">' + $('#message_input').val().replace(/\n/g,"<br>") + '</h4></div></div></div>');
+    setTimeout(function(){
+        $('#message2').removeClass('new-message')
+        adjustMessageScroll(2,500);
+    },150)
+}
+function displayMessage3(){
+    $('#messages').append('<div class="row"><div class="col xs-10 po-no-bottom-margin"><div id="message3" class="box message new-message message-me blue-bg"><h4>Merci beaucoup pour votre message ! <br> Pourriez-vous me communiquer vos coordonnées afin que je puisse vous répondre prochainement ?</h4></div></div></div>');
+    setTimeout(function(){
+        $('#message3').removeClass('new-message')
+        adjustMessageScroll(3,500);
+    },700)
+}
+function displayAnswer2() {
+    const size = $('.frame').height() - $('#answer2').height();
+    setTimeout(function(){
+        $('#answer2').css('display','block')
+        $('#messages').animate({
+            'height': size + "px"
+        },300,function(){
+            adjustMessageScroll(3,0);
+        });
+    },1250)
+}
+
+// Quitter en cliquant à coté
+
+// OK Quitter via le scroll
 $(window).on('scroll',function(){
     if (form_opened) {
         console.log('fonction fermeture');
