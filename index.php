@@ -250,16 +250,16 @@
                 <div class="row line"></div>
                 <div class="row full-height">
                     <div class="col xs-4 no-margin">
-                        <input id="name_input" type="text" class="rp_input" placeholder="Votre nom">
+                        <input id="name_input" type="text" class="rp_input" maxlength="50" autocomplete="name" placeholder="Votre nom">
                     </div>
                     <div class="col xs-5 po-6 no-margin">
-                        <input id="mail_input" type="email" class="rp_input" placeholder="Votre adresse mail">
+                        <input id="mail_input" type="email" class="rp_input" maxlength="100" autocomplete="email" placeholder="Votre adresse mail">
                     </div>
                     <div class="col xs-3 po-0 text-center no-margin">
-                        <button class="button send_message" type="button">Envoyer</button>
+                        <button class="button send_contact_info" type="button">Envoyer</button>
                     </div>
                     <div class="col xs-0 po-2 no-margin no-padding">
-                        <button class="icon-button send_message" type="button"><img src="ressources/icones/send.svg" alt=""></button>
+                        <button class="icon-button send_contact_info" type="button"><img src="ressources/icones/send.svg" alt=""></button>
                     </div>
                 </div>
             </div> <!-- Fin #answer2 -->

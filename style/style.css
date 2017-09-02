@@ -392,21 +392,21 @@ button {
     padding: 1.85vh 2vw;
     background-color: transparent;
     border-radius: 40px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.87);
     font-size: calc(1vw + .5vh + .5rem);
     font-weight: lighter;
     outline: none;
+}
+.rp_input.error {
+    border: 2px solid #ff1744;
+    color: #ff1744;
 }
 
 textarea.rp_input {
     resize: none;
     height: 100%;
     height: calc(100% - 22px);
-}
-
-.rp_input:valid {
-    border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 

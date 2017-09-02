@@ -24,8 +24,9 @@ $(".dir_message_textarea").on('click',function(){
     }
 });
 
+// Première étape contact
 $('.send_message').on('click',function(){
-    if ( $('#message_input').val() != "" ) {
+    if ( verifMessageTextarea() ) {
         // OK Empecher de quitter via le scroll
         form_opened = false;
         $('html,body').css('overflow-y','hidden');
@@ -41,11 +42,76 @@ $('.send_message').on('click',function(){
         displayMessage3();
         // Faire apparaitre champ input nom et mail
         displayAnswer2();
-    } else {
-        // Retourner erreur champ vide
-        alert("Vous n'avez pas saisi de message fdp")
     }
 });
+
+// Validation message textarea
+$('#message_input').on('change paste keyup',function(){
+    verifMessageTextarea();
+});
+function verifMessageTextarea() {
+    const value = $('#message_input').val();
+    if (value == "") {
+        $('#message_input').addClass('error');
+        return false;
+    } else {
+        $('#message_input').removeClass('error');
+        return true;
+    }
+}
+
+// Seconde étape contact
+$('.send_contact_info').on('click',function() {
+    // Vérifier informations de l'utilisateur
+    if (verifNameInput() && verifEmailInput() ) {
+        // Cacher partie answer2
+        $('#messages').animate({
+            'height':'100%'
+        },300,$.bez([.2,0,.4,1]),function(){
+            $('#answer2').css('display','none');
+        });
+        // Faire apparaitre message de l'utilisateur
+        displayMessage4();
+        // Courte pause
+        setTimeout(function(){
+            // Fermer boite de dialogue message #fixed_contact_form
+            // Afficher message final dans #contact_form
+        },1000);
+        // Envoyer le formulaire via ajax
+    }
+});
+
+// Validation name input
+$('#name_input').on('change paste keyup',function(){
+    verifNameInput();
+});
+function verifNameInput() {
+    const value = $('#name_input').val();
+    if (value == "" || value.length > 50) {
+        $('#name_input').addClass('error');
+        return false;
+    } else {
+        $('#name_input').removeClass('error');
+        return true;
+    }
+}
+
+// validation email input
+$('#mail_input').on('change paste keyup',function(){
+    verifEmailInput();
+});
+function verifEmailInput() {
+    const value = $('#mail_input').val();
+    const mail_pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+    if (value == "" || value.length > 100 || !mail_pattern.test(value) ) {
+        $('#mail_input').addClass('error');
+        return false;
+    } else {
+        $('#mail_input').removeClass('error');
+        return true;
+    }
+}
+
 
 // Gérer le contenu message trop grand et ajuster le scroll
 function adjustMessageScroll(count,time) {
@@ -89,6 +155,13 @@ function displayAnswer2() {
             adjustMessageScroll(3,0);
         });
     },1250)
+}
+function displayMessage4(){
+    $('#messages').append('<div class="row"><div class="col xs-10 offset-xs-2 text-right po-no-bottom-margin"><div id="message4" class="box message message-user new-message yellow-accent"><h4 class="text-left"><div class="bold">'+ $('#name_input').val() +'</div>'+ $('#mail_input').val() +'</h4></div></div></div>');
+    setTimeout(function(){
+        $('#message4').removeClass('new-message')
+        adjustMessageScroll(4,500);
+    },150)
 }
 
 // Quitter en cliquant à coté
