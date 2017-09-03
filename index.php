@@ -139,7 +139,7 @@
     </div> <!-- Fin Works -->
     <div id="contact" class="section">
         <div id="contact_form" class="row to_anim fr_left">
-            <div class="col xs-12">
+            <div id="message_beginning" class="col xs-12">
                 <div class="box classic white-bg">
                     <div class="row po-first-msg">
                         <div class="col xs-2 po-0">
@@ -163,6 +163,22 @@
                         </div>
                         <div class="col xs-0 po-2 no-margin no-padding">
                             <button class="icon-button dir_message_textarea" type="button"><img src="ressources/icones/send.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="message_end" class="col xs-12 no-margin">
+                <div class="box invisible">
+                    <div class="row po-first-msg">
+                        <div class="col xs-2 po-0 no-margin">
+                            <div class="box image circle img_full_height">
+                                <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+                            </div>
+                        </div>
+                        <div class="col xs-10 po-12 no-margin">
+                            <div class="box message message-me blue-bg">
+                                <h4>Merci beaucoup pour votre message. Je prendrai le temps de le lire et vous répondrez avec plaisir ! <br> Bonne fin de visite sur mon portfolio ;-)</h4>
+                            </div>
                         </div>
                     </div>
                 </div>

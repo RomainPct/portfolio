@@ -6,8 +6,7 @@ var form_opened = false;
 
 $(".dir_message_textarea").on('click',function(){
     if (!form_opened) {
-        console.log('fonction ouverture');
-        const pos = $("#contact").offset().top + ( $('#contact_form').height()/2 ) - ( $("html").height() / 2 ) - 10
+        const pos = $("#contact").offset().top + ( $('#contact_form').height()/2 ) - ( $("html").height() / 2 ) - 10;
         $('html,body').animate({
             scrollTop: pos + "px"
         },200,$.bez([0.4,0,0.2,1]),function(){
@@ -74,9 +73,25 @@ $('.send_contact_info').on('click',function() {
         displayMessage4();
         // Courte pause
         setTimeout(function(){
+            // Débloquer scroll
+            $('html,body').css('overflow-y','auto');
+            // Replacer scroll
+            $('#message_beginning').css('display','none');
+            $('#message_end').css('display','block');
+            const pos = $("#contact").offset().top + ( $('#contact_form').height()/2 ) - ( $("html").height() / 2 ) - 10;
+            $('html,body').scrollTop(pos);
             // Fermer boite de dialogue message #fixed_contact_form
+            fixed_contact_form.css({
+                'top':'-50%',
+                'opacity':'0'
+            });
             // Afficher message final dans #contact_form
-        },1000);
+            $('#message_end').css({
+                'opacity':'1',
+                'transform':'translateY(0%)',
+                '-webkit-transform':'translateY(0%)'
+            });
+        },1850);
         // Envoyer le formulaire via ajax
     }
 });
@@ -169,7 +184,6 @@ function displayMessage4(){
 // OK Quitter via le scroll
 $(window).on('scroll',function(){
     if (form_opened) {
-        console.log('fonction fermeture');
         form_opened = false;
         fixed_contact_form.css({
                 'display':'none',
