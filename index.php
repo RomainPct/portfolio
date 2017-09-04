@@ -149,14 +149,14 @@
                         </div>
                         <div class="col xs-10 po-12 po-no-bottom-margin">
                             <div class="box message message-me blue-bg">
-                                <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
+                                <h4 class="text-white100">Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à me laisser votre mesage.</h4>
                             </div>
                         </div>
                     </div>
                     <div class="row line"></div>
                     <div class="row">
                         <div class="col xs-9 po-10 no-margin">
-                            <input type="text" class="rp_input dir_message_textarea" placeholder="Votre message">
+                            <input id="input_accroche" type="text" class="rp_input dir_message_textarea" placeholder="Votre message">
                         </div>
                         <div class="col xs-3 po-0 text-center no-margin">
                             <button class="button dir_message_textarea" type="button">Envoyer</button>
@@ -177,7 +177,7 @@
                         </div>
                         <div class="col xs-10 po-12 no-margin">
                             <div class="box message message-me blue-bg">
-                                <h4>Merci beaucoup pour votre message. Je prendrai le temps de le lire et vous répondrez avec plaisir ! <br> Bonne fin de visite sur mon portfolio ;-)</h4>
+                                <h4 class="text-white100">Merci, je prendrai le temps de lire votre message et vous répondrez avec plaisir ! <br> Bonne fin de visite sur mon portfolio ;-)</h4>
                             </div>
                         </div>
                     </div>
@@ -243,14 +243,14 @@
                     </div>
                     <div class="col xs-10 po-12 po-no-bottom-margin">
                         <div class="box message message-me blue-bg">
-                            <h4>Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à m’envoyer un message.</h4>
+                            <h4 class="text-white100">Si vous recherchez un UX-UI designer pour faire avancer votre projet ou que vous voulez simplement prendre contact avec moi, n’hésitez pas à me laisser votre mesage.</h4>
                         </div>
                     </div>
                 </div>
             </div> <!-- fin #messages -->
             <div id="answer1">
                 <div class="row line"></div>
-                <div class="row full-height">
+                <div class="row form">
                     <div class="col xs-9 po-10 no-margin full-height">
                         <textarea id="message_input" class="rp_input" placeholder="Votre message"></textarea>
                     </div>
@@ -265,10 +265,10 @@
             <div id="answer2">
                 <div class="row line"></div>
                 <div class="row full-height">
-                    <div class="col xs-4 no-margin">
+                    <div class="col xs-4 po-8 no-margin">
                         <input id="name_input" type="text" class="rp_input" maxlength="50" autocomplete="name" placeholder="Votre nom">
                     </div>
-                    <div class="col xs-5 po-6 no-margin">
+                    <div class="col xs-5 po-10 no-margin">
                         <input id="mail_input" type="email" class="rp_input" maxlength="100" autocomplete="email" placeholder="Votre adresse mail">
                     </div>
                     <div class="col xs-3 po-0 text-center no-margin">

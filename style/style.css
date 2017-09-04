@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blue-bg {
-    background-color: #06aed5;
+    background-color: #0277BD;
 }
 
 .red-error {
@@ -317,7 +317,7 @@ menu .items .item {
     border-radius: 20px;
     border-top: 10vh solid transparent;
     border-right: 10vh solid transparent;
-    border-bottom: 10vh solid #06aed5;
+    border-bottom: 10vh solid #0277BD;
 }
 
 .box.message-user {
@@ -363,26 +363,13 @@ button {
 .icon-button {
     border-radius: 50%;
     width: 100%;
-    height: calc((88vw - 20px)*2/12);
+    height: calc(((88vw - 20px)*2/12));
     padding: 0;
 }
-
 .icon-button img {
     width: 70%;
     vertical-align: middle;
 }
-
-.icon-button {
-    border-radius: 50%;
-    width: 100%;
-    height: calc(((88vw - 20px)*2/12) - 20px);
-    padding: 0;
-}
-
-.icon-button img {
-    width: 80%;
-}
-
 
 /* Form */
 
@@ -406,7 +393,7 @@ button {
 textarea.rp_input {
     resize: none;
     height: 100%;
-    height: calc(100% - 22px);
+    border-radius: 20px;
 }
 
 /* Form contact display */
@@ -462,6 +449,9 @@ textarea.rp_input {
 #answer1 {
     height: 30%;
 }
+#answer1 .row.form {
+    height: calc(100% - 22px);
+}
 #answer2 {
     display: none;
 }
@@ -486,7 +476,7 @@ textarea.rp_input {
         padding: 2vh 1vw;
     }
     .po-first-msg {
-        background-color: #06aed5;
+        background-color: #0277BD;
         border-radius: 10px;
         margin-bottom: 2vh;
     }
@@ -522,5 +512,9 @@ textarea.rp_input {
     /* Button */
     .button {
         padding: 1vh 2.5vw;
+    }
+
+    .po-adaptativ-margin {
+        margin-bottom: 2vh;
     }
 }
