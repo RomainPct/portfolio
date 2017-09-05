@@ -302,27 +302,34 @@ menu .items .item {
 }
 
 .box.message-me {
-    margin-left: 8.3333%;
+    margin-left: 2.5vw;
 }
 .box.message-me:before {
     content: "";
     display: block;
     position: absolute;
-    left: -1vh;
-    top: 30%;
-    -webkit-transform: translateY(-50%) rotate(45deg);
-    transform: translateY(-50%) rotate(45deg);
-    width: 0;
-    height: 0;
-    border-radius: 20px;
-    border-top: 10vh solid transparent;
-    border-right: 10vh solid transparent;
-    border-bottom: 10vh solid #0277BD;
+    left: -2vw;
+    top: 0;
+    width: 2.5vw;
+    height: 100%;
+    background: url('../ressources/messages/blue.svg') no-repeat right;
+    background-size: 100% auto !important;
 }
 
 .box.message-user {
-    margin-right: 8.3333%;
+    margin-right: 2.5vw;
     display: inline-block;
+}
+.box.message-user:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -2vw;
+    top: 0;
+    width: 2.5vw;
+    height: 100%;
+    background: url('../ressources/messages/yellow.svg') no-repeat left;
+    background-size: 100% auto !important;
 }
 .box.message-user h4 {
     display: inline-block;
@@ -388,6 +395,7 @@ button {
 .rp_input.error {
     border: 2px solid #ff1744;
     color: #ff1744;
+    position: relative;
 }
 
 textarea.rp_input {
@@ -483,7 +491,7 @@ textarea.rp_input {
     .box.message-me {
         margin-left: 0;
     }
-    .box.message-me:before {
+    .box.message-me:before, .box.message-user:before {
         display: none;
     }
     .box.image.circle {
@@ -516,5 +524,13 @@ textarea.rp_input {
 
     .po-adaptativ-margin {
         margin-bottom: 2vh;
+    }
+}
+
+/* Orientation paysage */
+@media (orientation:landscape) {
+    .box.image.la-img_full_height img {
+        height: 100%;
+        width: auto;
     }
 }

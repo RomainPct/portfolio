@@ -117,13 +117,13 @@
                 </div>
             </div>
             <div class="col xs-4 po-12 to_anim fr_right">
-                <div class="box image size30vw po-size-50vw img_full_height w_shadow hoverable">
+                <div class="box image size30vw po-size-50vw la-img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Passion Spa Brive</h2>
                     <img src="ressources/projets/passionspabrive.jpg" alt="Passion Spa Brive">
                 </div>
             </div>
             <div class="col xs-4 po-12 to_anim fr_left">
-                <div class="box image size30vw po-size-50vw  img_full_height w_shadow hoverable">
+                <div class="box image size30vw po-size-50vw la-img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">#DailyUI Challenge</h2>
                     <img src="ressources/projets/dailyui.jpg" alt="DailyUI Challenge">
                 </div>

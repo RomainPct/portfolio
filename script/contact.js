@@ -74,8 +74,18 @@ function verifMessageTextarea() {
     }
 }
 
-// Seconde étape contact
+// Cliquer sur le bouton pour lancer étape 2
 $('.send_contact_info').on('click',function() {
+    launchStep2();
+});
+$('#mail_input').on('keyup',function(e){
+    if (e.keyCode == 13) {
+        launchStep2();
+    }
+});
+
+// Seconde étape contact
+function launchStep2() {
     // Vérifier informations de l'utilisateur
     if (verifNameInput() && verifEmailInput() ) {
         // Cacher partie answer2
@@ -110,8 +120,7 @@ $('.send_contact_info').on('click',function() {
         // Envoyer le formulaire via ajax
         sendForm();
     }
-});
-
+}
 
 function sendForm() {
     var data = {
@@ -208,19 +217,23 @@ function displayMessage4(){
     },150)
 }
 
-// Quitter en cliquant à coté
-
 // OK Quitter via le scroll
 $(window).on('scroll',function(){
     if (form_opened) {
         if (!is_touchscreen()) {
             form_opened = false;
+            $('#input_accroche').blur();
             fixed_contact_form.css({
-                    'display':'none',
                     'background-color':'rgba(0,0,0,0.0)'
             });
+            fixed_form.animate({
+                'height':'0%'
+            },300,$.bez([0.4,0,0.2,1]),function() {
+                fixed_contact_form.css('display','none');
+                fixed_form.css('height','auto');
+            })
         }
     }
-})
+});
 
 })(jQuery);
