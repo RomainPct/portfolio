@@ -99,7 +99,7 @@ function launchStep2() {
         // Courte pause
         setTimeout(function(){
             // Débloquer scroll
-            $('html,body').css('overflow-y','auto');
+            $('html,body').css('overflow-y','initial');
             // Replacer scroll
             $('#message_beginning').css('display','none');
             $('#message_end').css('display','block');

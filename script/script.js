@@ -31,6 +31,7 @@ $(window).on('scroll',function(){
     appearAnimation(scrollValue);
     // Mettre à jour le menu
     actualizeMenu(scrollValue);
+    console.log(scrollValue)
 });
 
 function appearAnimation(scrollValue){
