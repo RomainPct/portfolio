@@ -42,6 +42,10 @@ a:any-link {
     color: #40C4FF;
 }
 
+audio {
+    display: none;
+}
+
 
 /* Animation*/
 

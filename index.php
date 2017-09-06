@@ -14,6 +14,9 @@
 
 <body>
 
+<audio id="beep-user" src="ressources/sounds/beep1.mp3" preload="auto"></audio>
+<audio id="beep-me" src="ressources/sounds/beep2.mp3" preload="auto"></audio>
+
     <div id="bande" class="col xs-1 yellow-accent"></div>
 
     <menu>
@@ -49,7 +52,12 @@
                 <div class="row">
                     <div class="col xs-0 md-4 po-0 md-block">
                         <div class="box image">
-                            <img src="ressources/general/logo.png" alt="logo">
+                            <picture>
+                                <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/general/logo-ultra.png">
+                                <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/general/logo-large.png">
+                                <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/general/logo-medium.png">
+                                <img src="ressources/general/logo-small.png" alt="logo">
+                            </picture>
                         </div>
                     </div>
                     <div class="col xs-12 md-8 po-10 offset-po-1">
@@ -65,7 +73,18 @@
                 </div>
             </div>
             <div class="col xs-6 po-12 to_anim fr_right po-no-bottom-margin">
-                <div class="box image"><img src="ressources/general/profil.jpg" alt=""></div>
+                <div class="box image">
+                    <picture>
+                        <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/general/profil-ultra.jpg">
+                        <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/general/profil-large.jpg">
+                        <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/general/profil-medium.jpg">
+
+                        <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/general/profil-ultra.jpg">
+                        <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/general/profil-large.jpg">
+                        <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/general/profil-medium.jpg">
+                        <img src="ressources/general/profil-small.jpg" alt="Romain Penchenat UX-UI Designer">
+                    </picture>
+                </div>
             </div>
         </div>
         <div class="large-space"></div>
@@ -113,25 +132,61 @@
             <div class="col xs-8 po-12 to_anim fr_left">
                 <div class="box image size30vw po-size-50vw w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Les villas de cassis</h2>
-                    <img src="ressources/projets/villa_cassis-large.jpg" alt="Les villas de cassis">
+                    <picture>
+                        <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/projets/villa_cassis-ultra.jpg">
+                        <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/projets/villa_cassis-large.jpg">
+                        <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/projets/villa_cassis-medium.jpg">
+
+                        <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/projets/villa_cassis-ultra.jpg">
+                        <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/projets/villa_cassis-large.jpg">
+                        <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/projets/villa_cassis-medium.jpg">
+                        <img src="ressources/projets/villa_cassis-small.jpg" alt="Les villas de cassis">
+                    </picture>
                 </div>
             </div>
             <div class="col xs-4 po-12 to_anim fr_right">
                 <div class="box image size30vw po-size-50vw la-img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Passion Spa Brive</h2>
-                    <img src="ressources/projets/passionspabrive.jpg" alt="Passion Spa Brive">
+                    <picture>
+                        <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/projets/passionspabrive-ultra-mobile.jpg">
+                        <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/projets/passionspabrive-large-mobile.jpg">
+                        <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/projets/passionspabrive-medium-mobile.jpg">
+
+                        <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/projets/passionspabrive-ultra.jpg">
+                        <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/projets/passionspabrive-large.jpg">
+                        <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/projets/passionspabrive-medium.jpg">
+                        <img src="ressources/projets/passionspabrive-small.jpg" alt="Passion Spa Brive">
+                    </picture>
                 </div>
             </div>
             <div class="col xs-4 po-12 to_anim fr_left">
                 <div class="box image size30vw po-size-50vw la-img_full_height w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">#DailyUI Challenge</h2>
-                    <img src="ressources/projets/dailyui.jpg" alt="DailyUI Challenge">
+                    <picture>
+                        <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/projets/dailyui-ultra-mobile.jpg">
+                        <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/projets/dailyui-large-mobile.jpg">
+                        <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/projets/dailyui-medium-mobile.jpg">
+
+                        <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/projets/dailyui-ultra.jpg">
+                        <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/projets/dailyui-large.jpg">
+                        <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/projets/dailyui-medium.jpg">
+                        <img src="ressources/projets/dailyui-small.jpg" alt="DailyUI Challenge">
+                    </picture>
                 </div>
             </div>
             <div class="col xs-8 po-12 to_anim fr_right">
                 <div class="box image size30vw po-size-50vw w_shadow hoverable">
                     <h2 class="headache text-white100 text-center">Le Drive Malemort</h2>
-                    <img src="ressources/projets/drive_malemort.jpg" alt="Le drive malemort">
+                    <picture>
+                        <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/projets/drive_malemort-ultra.jpg">
+                        <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/projets/drive_malemort-large.jpg">
+                        <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/projets/drive_malemort-medium.jpg">
+
+                        <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/projets/drive_malemort-ultra.jpg">
+                        <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/projets/drive_malemort-large.jpg">
+                        <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/projets/drive_malemort-medium.jpg">
+                        <img src="ressources/projets/drive_malemort-small.jpg" alt="Le drive malemort">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -144,7 +199,16 @@
                     <div class="row po-first-msg">
                         <div class="col xs-2 po-0">
                             <div class="box image circle img_full_height">
-                                <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+                                <picture>
+                                    <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/general/profil-ultra.jpg">
+                                    <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/general/profil-large.jpg">
+                                    <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/general/profil-medium.jpg">
+
+                                    <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/general/profil-ultra.jpg">
+                                    <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/general/profil-large.jpg">
+                                    <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/general/profil-medium.jpg">
+                                    <img src="ressources/general/profil-small.jpg" alt="Romain Penchenat UX-UI Designer">
+                                </picture>
                             </div>
                         </div>
                         <div class="col xs-10 po-12 po-no-bottom-margin">
@@ -172,7 +236,16 @@
                     <div class="row po-first-msg">
                         <div class="col xs-2 po-0 no-margin">
                             <div class="box image circle img_full_height">
-                                <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+                                <picture>
+                                    <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/general/profil-ultra.jpg">
+                                    <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/general/profil-large.jpg">
+                                    <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/general/profil-medium.jpg">
+
+                                    <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/general/profil-ultra.jpg">
+                                    <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/general/profil-large.jpg">
+                                    <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/general/profil-medium.jpg">
+                                    <img src="ressources/general/profil-small.jpg" alt="Romain Penchenat UX-UI Designer">
+                                </picture>
                             </div>
                         </div>
                         <div class="col xs-10 po-12 no-margin">
@@ -199,27 +272,27 @@
         </div>
         <div class="medium-space"></div>
         <div class="row to_anim fr_right">
-            <div class="col xs-2  po-3 offset-xs-1 offset-po-0 text-center">
+            <div class="col xs-2  po-4 offset-xs-1 offset-po-0 text-center">
                 <a href="https://www.behance.net/tellusoffi5fd1" target="_blank">
                     <div class="box image social white-bg"><img src="ressources/icones/behance.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 po-3 text-center">
+            <div class="col xs-2 po-4 text-center">
                 <a href="https://dribbble.com/RomainPenchenat" target="_blank">
                     <div class="box image social white-bg"><img src="ressources/icones/dribbble.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 po-3 text-center">
+            <div class="col xs-2 po-4 text-center">
                 <a href="https://twitter.com/romainp_design" target="_blank">
                     <div class="box image social white-bg"><img src="ressources/icones/twitter.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 po-3 text-center">
+            <div class="col xs-2 po-4 offset-po-2 text-center">
                 <a href="https://www.instagram.com/romainpdesign/" target="_blank">
                     <div class="box image social white-bg"><img src="ressources/icones/instagram.svg" alt=""></div>
                 </a>
             </div>
-            <div class="col xs-2 po-10 offset-po-1 text-center">
+            <div class="col xs-2 po-4 text-center">
                 <a href="https://www.messenger.com/t/romainpdesign" target="_blank">
                     <div class="box image social white-bg"><img src="ressources/icones/messenger.svg" alt=""></div>
                 </a>
@@ -238,7 +311,16 @@
                 <div class="row po-first-msg">
                     <div class="col xs-2 po-0">
                         <div class="box image circle img_full_height">
-                            <img src="ressources/general/profil.jpg" alt="Romain Penchenat">
+                            <picture>
+                                <source media="(min-width: 960px) and (orientation:portrait)" srcset="ressources/general/profil-ultra.jpg">
+                                <source media="(min-width: 720px) and (orientation:portrait)" srcset="ressources/general/profil-large.jpg">
+                                <source media="(min-width: 400px) and (orientation:portrait)" srcset="ressources/general/profil-medium.jpg">
+
+                                <source media="(min-width: 1920px) and (orientation:landscape)" srcset="ressources/general/profil-ultra.jpg">
+                                <source media="(min-width: 1440px) and (orientation:landscape)" srcset="ressources/general/profil-large.jpg">
+                                <source media="(min-width: 780px) and (orientation:landscape)" srcset="ressources/general/profil-medium.jpg">
+                                <img src="ressources/general/profil-small.jpg" alt="Romain Penchenat UX-UI Designer">
+                            </picture>
                         </div>
                     </div>
                     <div class="col xs-10 po-12 po-no-bottom-margin">

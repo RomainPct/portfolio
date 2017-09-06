@@ -116,6 +116,7 @@ function launchStep2() {
                 'transform':'translateY(0%)',
                 '-webkit-transform':'translateY(0%)'
             });
+            $('#beep-me').trigger("play");
         },1850);
         // Envoyer le formulaire via ajax
         sendForm();
@@ -189,6 +190,7 @@ function displayMessage2(){
     setTimeout(function(){
         $('#message2').removeClass('new-message')
         adjustMessageScroll(2,500);
+        $('#beep-user').trigger("play");
     },150)
 }
 function displayMessage3(){
@@ -196,6 +198,7 @@ function displayMessage3(){
     setTimeout(function(){
         $('#message3').removeClass('new-message')
         adjustMessageScroll(3,500);
+        $('#beep-me').trigger("play");
     },700)
 }
 function displayAnswer2() {
@@ -214,6 +217,7 @@ function displayMessage4(){
     setTimeout(function(){
         $('#message4').removeClass('new-message')
         adjustMessageScroll(4,500);
+        $('#beep-user').trigger("play");
     },150)
 }
 
