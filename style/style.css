@@ -390,7 +390,7 @@ button {
     padding: 1.85vh 2vw;
     background-color: transparent;
     border-radius: 40px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.38);
     color: rgba(0, 0, 0, 0.87);
     font-size: calc(1vw + .5vh + .5rem);
     font-weight: lighter;
@@ -408,10 +408,20 @@ textarea.rp_input {
     border-radius: 20px;
 }
 
-/* Form contact display */
-#contact_form {
-    overflow: hidden;
+::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.54);
 }
+::-moz-placeholder {
+  color: rgba(0,0,0,0.54);
+}
+:-ms-input-placeholder {
+  color: rgba(0,0,0,0.54);
+}
+::placeholder {
+  color: rgba(0,0,0,0.54);
+}
+
+/* Form contact display */
 #message_end {
     display: none;
     opacity: 0;
