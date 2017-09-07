@@ -194,7 +194,7 @@ function displayMessage2(){
     },150)
 }
 function displayMessage3(){
-    messages.append('<div class="row"><div class="col xs-10 po-adaptativ-margin"><div id="message3" class="box message new-message message-me blue-bg"><h4 class="text-white100">Merci pour votre message ! <br> Pourriez-vous me communiquer vos coordonnées afin que je puisse vous répondre prochainement ?</h4></div></div></div>');
+    messages.append('<div class="row"><div class="col xs-10 po-adaptativ-margin"><div id="message3" class="box message new-message message-me blue-bg"><h4 class="text-white100">'+ $('#message2-data').html() +'</h4></div></div></div>');
     setTimeout(function(){
         $('#message3').removeClass('new-message')
         adjustMessageScroll(3,500);

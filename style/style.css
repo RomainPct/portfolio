@@ -477,6 +477,9 @@ textarea.rp_input {
 #answer2 {
     display: none;
 }
+#message2-data {
+    display: none;
+}
 
 
 /* Orientation portrait */
